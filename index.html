@@ -30,6 +30,8 @@
     .meta{display:flex;gap:18px;justify-content:center;margin:18px 0 26px}
     .meta .box{background:linear-gradient(180deg,#fff,#fff0);padding:10px 18px;border-radius:12px;box-shadow:0 3px 10px rgba(0,0,0,0.05);text-align:center}
     .meta .big{font-size:22px;font-weight:800;color:#b01b76}
+    .meta .date-large{font-size:28px;font-weight:800;color:#b01b76;}
+    .meta .month{font-size:16px;font-weight:600;color:#b01b76;}
     .venue{
       display:flex;
       flex-direction:column;
@@ -57,17 +59,18 @@
 <body>
   <div class="card" role="main">
     <div class="glitter" aria-hidden="true"></div>
-    <p class="subtitle">Vedashri 's</p>
+    <p class="subtitle">Vedashri's</p>
     <h1 class="title">1st Birthday</h1>
 
     <div class="meta">
       <div class="box">
+        <div class="date-large">26<sup class="ord">th</sup></div>
+        <div class="month">OCTOBER</div>
         <div class="big">SUNDAY</div>
-        <div>26<sup class="ord">th</sup> OCTOBER</div>
       </div>
       <div class="box">
         <div class="big">6.30 pm.</div>
-        <div>Evening</div>
+        <div class="month">Evening</div> <!-- Updated here -->
       </div>
     </div>
 
@@ -86,6 +89,7 @@
   </div>
 </body>
 </html>
+
 
 
 
