@@ -21,7 +21,6 @@
       border-radius:18px;padding:36px 42px;box-shadow:0 8px 30px rgba(0,0,0,0.12);position:relative;overflow:hidden;
       border:6px solid rgba(255,156,207,0.18);
     }
-    /* glitter corner */
     .glitter{
       position:absolute;right:-60px;top:-60px;width:260px;height:260px;background:radial-gradient(circle at 30% 30%, rgba(255,255,255,0.9), rgba(255,255,255,0) 30%), repeating-linear-gradient(45deg, rgba(255,255,255,0.06) 0 2px, rgba(255,255,255,0) 2px 6px);
       transform:rotate(25deg);filter:blur(6px);opacity:0.95;border-radius:50%;
@@ -31,16 +30,26 @@
     .meta{display:flex;gap:18px;justify-content:center;margin:18px 0 26px}
     .meta .box{background:linear-gradient(180deg,#fff,#fff0);padding:10px 18px;border-radius:12px;box-shadow:0 3px 10px rgba(0,0,0,0.05);text-align:center}
     .meta .big{font-size:22px;font-weight:800;color:#b01b76}
-    .venue{display:flex;flex-direction:column;align-items:center;gap:6px}
-    .venue h2{margin:0;font-size:20px;color:#a2276b}
+    .venue{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      gap:6px;
+      text-align:center;
+      width:100%;
+      margin:0 auto;
+    }
+    .venue h2{margin:0;font-size:20px;color:#a2276b;text-align:center;}
     .address{font-size:15px;color:#4b1f3a;text-align:center;line-height:1.35}
     .cta{display:flex;justify-content:center;margin-top:20px}
     .link-btn{background:linear-gradient(90deg,#ff9ccf,#ffb3df);padding:12px 18px;border-radius:999px;text-decoration:none;font-weight:700;color:#4b0030;box-shadow:0 6px 18px rgba(255,156,207,0.18);border:2px solid rgba(255,255,255,0.45)}
     footer.note{margin-top:18px;text-align:center;color:#6b2b4a;font-size:13px}
-    /* small screens */
     @media (max-width:480px){
       h1.title{font-size:44px}
       .card{padding:22px}
+      .venue h2{font-size:18px;text-align:center;}
+      .address{font-size:14px;text-align:center;}
     }
   </style>
 </head>
@@ -68,7 +77,6 @@
       </div>
 
       <div class="cta">
-        <!-- Google Maps link: matches the address from your uploaded PDF -->
         <a class="link-btn" href="https://www.google.com/maps?q=E%20Block,%203,%203rd%20Ave,%20Block%20E,%20Annanagar%20East,%20Chennai,%20Tamil%20Nadu%20600102" target="_blank" rel="noopener noreferrer">Click this for location</a>
       </div>
 
@@ -77,3 +85,5 @@
   </div>
 </body>
 </html>
+
+
