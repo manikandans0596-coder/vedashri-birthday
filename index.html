@@ -30,14 +30,6 @@
     .meta{display:flex;gap:18px;justify-content:center;margin:18px 0 26px}
     .meta .box{background:linear-gradient(180deg,#fff,#fff0);padding:10px 18px;border-radius:12px;box-shadow:0 3px 10px rgba(0,0,0,0.05);text-align:center}
     .meta .big{font-size:22px;font-weight:800;color:#b01b76}
-    .meta .date-large{font-size:28px;font-weight:800;color:#b01b76;}
-    .meta .month{font-size:16px;font-weight:600;color:#b01b76;}
-    .meta .label{
-      font-size:18px;
-      font-weight:600;
-      color:#b01b76;
-      margin-top:4px;
-    }
     .venue{
       display:flex;
       flex-direction:column;
@@ -50,15 +42,43 @@
     }
     .venue h2{margin:0;font-size:20px;color:#a2276b;text-align:center;}
     .address{font-size:15px;color:#4b1f3a;text-align:center;line-height:1.35}
-    .cta{display:flex;justify-content:center;margin-top:20px}
-    .link-btn{background:linear-gradient(90deg,#ff9ccf,#ffb3df);padding:12px 18px;border-radius:999px;text-decoration:none;font-weight:700;color:#4b0030;box-shadow:0 6px 18px rgba(255,156,207,0.18);border:2px solid rgba(255,255,255,0.45)}
+    .cta{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      gap:10px;
+      margin-top:20px;
+    }
+    .link-btn{
+      background:linear-gradient(90deg,#ff9ccf,#ffb3df);
+      padding:12px 18px;
+      border-radius:999px;
+      text-decoration:none;
+      font-weight:700;
+      color:#4b0030;
+      box-shadow:0 6px 18px rgba(255,156,207,0.18);
+      border:2px solid rgba(255,255,255,0.45);
+      text-align:center;
+      width:fit-content;
+      min-width:240px;
+    }
+    /* Tamil version smaller */
+    .link-btn.tamil{
+      font-size:14px;
+      font-weight:600;
+      opacity:0.9;
+      padding:10px 16px;
+      min-width:220px;
+    }
     footer.note{margin-top:18px;text-align:center;color:#6b2b4a;font-size:13px}
-    sup.ord{font-size:0.6em;vertical-align:super;}
     @media (max-width:480px){
       h1.title{font-size:44px}
       .card{padding:22px}
       .venue h2{font-size:18px;text-align:center;}
       .address{font-size:14px;text-align:center;}
+      .cta{gap:8px;}
+      .link-btn{font-size:14px;padding:10px 16px;min-width:200px;}
+      .link-btn.tamil{font-size:13px;min-width:190px;}
     }
   </style>
 </head>
@@ -70,13 +90,12 @@
 
     <div class="meta">
       <div class="box">
-        <div class="date-large">26<sup class="ord">th</sup></div>
-        <div class="month">OCTOBER</div>
         <div class="big">SUNDAY</div>
+        <div>OCTOBER</div>
       </div>
       <div class="box">
-        <div class="big">6.30 pm</div>
-        <div class="label">Evening</div> <!-- Updated class for larger font + spacing -->
+        <div class="big">6.30 pm.</div>
+        <div>Evening</div>
       </div>
     </div>
 
@@ -87,7 +106,12 @@
       </div>
 
       <div class="cta">
-        <a class="link-btn" href="https://www.google.com/maps?q=E%20Block,%203,%203rd%20Ave,%20Block%20E,%20Annanagar%20East,%20Chennai,%20Tamil%20Nadu%20600102" target="_blank" rel="noopener noreferrer">Click this for location</a>
+        <a class="link-btn" href="https://www.google.com/maps?q=E%20Block,%203,%203rd%20Ave,%20Block%20E,%20Annanagar%20East,%20Chennai,%20Tamil%20Nadu%20600102" target="_blank" rel="noopener noreferrer">
+          Click this for location
+        </a>
+        <a class="link-btn tamil" href="https://www.google.com/maps?q=E%20Block,%203,%203rd%20Ave,%20Block%20E,%20Annanagar%20East,%20Chennai,%20Tamil%20Nadu%20600102" target="_blank" rel="noopener noreferrer">
+          இடம் காண இங்கே கிளிக் செய்யவும்
+        </a>
       </div>
 
       <footer class="note">We look forward to celebrating with you!</footer>
@@ -95,11 +119,3 @@
   </div>
 </body>
 </html>
-
-
-
-
-
-
-
-
