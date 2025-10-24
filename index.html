@@ -48,3 +48,78 @@
       align-items:center;
       gap:10px;
       margin-top:20px;
+    }
+    .link-btn{
+      background:linear-gradient(90deg,#ff9ccf,#ffb3df);
+      padding:12px 18px;
+      border-radius:999px;
+      text-decoration:none;
+      font-weight:700;
+      color:#4b0030;
+      box-shadow:0 6px 18px rgba(255,156,207,0.18);
+      border:2px solid rgba(255,255,255,0.45);
+      text-align:center;
+      width:fit-content;
+      min-width:240px;
+    }
+    /* Tamil version smaller */
+    .link-btn.tamil{
+      font-size:14px;
+      font-weight:600;
+      opacity:0.9;
+      padding:10px 16px;
+      min-width:220px;
+    }
+    footer.note{margin-top:18px;text-align:center;color:#6b2b4a;font-size:13px}
+    @media (max-width:480px){
+      h1.title{font-size:44px}
+      .card{padding:22px}
+      .venue h2{font-size:18px;text-align:center;}
+      .address{font-size:14px;text-align:center;}
+      .cta{gap:8px;}
+      .link-btn{font-size:14px;padding:10px 16px;min-width:200px;}
+      .link-btn.tamil{font-size:13px;min-width:190px;}
+    }
+  </style>
+</head>
+<body>
+  <div class="card" role="main">
+    <div class="glitter" aria-hidden="true"></div>
+    <p class="subtitle">Vedashri's</p>
+    <h1 class="title">1st Birthday</h1>
+
+    <div class="meta">
+      <div class="box">
+        <div class="big">SUNDAY</div>
+        <div>OCTOBER</div>
+      </div>
+      <div class="box">
+        <div class="big">26<sup>th</sup></div>
+        <div>Date</div>
+      </div>
+      <div class="box">
+        <div class="big">6.30 pm</div>
+        <div>Evening</div>
+      </div>
+    </div>
+
+    <div class="venue">
+      <h2>Savoury Sea Shell Restaurant</h2>
+      <div class="address">
+        E Block, 3, 3rd Ave, Block E,<br />Annanagar East,<br />Chennai, Tamil Nadu 600102
+      </div>
+
+      <div class="cta">
+        <a class="link-btn" href="https://www.google.com/maps?q=E%20Block,%203,%203rd%20Ave,%20Block%20E,%20Annanagar%20East,%20Chennai,%20Tamil%20Nadu%20600102" target="_blank" rel="noopener noreferrer">
+          Click this for location
+        </a>
+        <a class="link-btn tamil" href="https://www.google.com/maps?q=E%20Block,%203,%203rd%20Ave,%20Block%20E,%20Annanagar%20East,%20Chennai,%20Tamil%20Nadu%20600102" target="_blank" rel="noopener noreferrer">
+          இடம் காண இங்கே கிளிக் செய்யவும்
+        </a>
+      </div>
+
+      <footer class="note">We look forward to celebrating with you!</footer>
+    </div>
+  </div>
+</body>
+</html>
